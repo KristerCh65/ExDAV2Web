@@ -1,0 +1,17 @@
+<div class="example-container" >
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Menu</span>
+         
+            <ul class="nav justify-content-center">
+                <li class="nav-item" *ngFor="let nav of fillerNav" >
+                  <a class="nav-link decora" aria-current="page" [routerLink]="nav.route"> {{nav.title}}</a>
+                </li>
+            </ul>
+     
+        </div>
+
+    </nav>
+
+</div>
